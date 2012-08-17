@@ -1,0 +1,27 @@
+  *:focus {outline: none;}
+
+#slider_container{overflow:hidden;width:400px;padding-left:2px;}
+div.box-primary{display:inline;float:left;width:480px;}
+div.box-secondary{display:inline;float:right;padding-left:15px;width:330px;}
+div.box-inner{overflow:hidden;zoom:1;} 
+#slider_container .js{overflow:hidden;zoom:1;}
+#slider_container .carousel,
+#slider_container .carousel .carousel-wrap{margin:0;border:1px solid #e1e4e9;zoom:1;}
+#slider_container .carousel {margin:0;width:380px; zoom:1;}
+#slider_container .js .carousel-wrap{display:inline-block;vertical-align:middle;width:268px;margin:0 0px 0px;}
+.IE #slider_container .js .carousel-wrap{display:inline;}
+#slider_container .carousel ul{margin:0;padding:0;zoom:1;}
+#slider_container .js ul li{overflow:hidden;display:inline;float:left;width:350px;height:400px;text-align:center;zoom:1;}
+#slider_container .carousel .carousel-control{overflow:hidden;display:inline-block;vertical-align:middle;width:24px;height:44px;cursor:pointer;line-height:999px;zoom:1;border:0;text-indent:-9999px;}
+#slider_container .carousel .carousel-next{background:url(../images/next.png) 0 0 no-repeat;margin-left:10px;}
+#slider_container .carousel .carousel-previous{background:url(../images/prev.png) 0 0 no-repeat;margin-right:10px;}
+#slider_container .carousel .carousel-control:hover{-moz-opacity:.7;opacity:0.70;filter:alpha(opacity=70);}
+#slider_container .carousel .disabled,#slider_container .carousel .disabled:hover{-moz-opacity:.1;opacity:0.10;filter:alpha(opacity=10);cursor:default;}
+#slider_container .carousel div{margin:0;padding:0;border:0;}
+#slider_container .carousel ul{padding:0;list-style:none;}                   
+#slider_container .carousel ul li{position:relative;width:268px;margin:0;}    // image width
+
+#slider_container div.center-wrap{overflow:hidden;clear:both;zoom:1;}
+#slider_container div.center-wrap div{border:0px solid #000;margin:0px 0;}
+#slider_container div.center-wrap a{margin:0 2px;padding:2px 5px;border:0px solid #000;background:#333;cursor:pointer;color:#fff;-moz-border-radius:12px;webkit-border-radius:12px;border-radius:12px;}
+#slider_container div.center-wrap a.active{font-weight:bold;color:#5db0e6;}

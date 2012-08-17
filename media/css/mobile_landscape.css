@@ -1,0 +1,141 @@
+#blubb {
+margin: 0 auto;
+position: relative;
+height: 100%;
+width: 520px;
+clear: left;
+
+ min-height: 0;
+    display: table-cell;
+    vertical-align: middle; 
+}
+
+ .frame_xy {
+  float:left;
+  width:520px;
+
+ }  
+
+         .team_desc {
+          display:block; 
+        }
+
+        .team_desc_mobile {
+          display:none;
+        }
+        
+         .nav_01, .table_ref_navi, .table_ref {
+           width:100%;
+        }
+
+        .ref_mobile {
+          display:none;
+        }
+        
+        .ref_mobile_l {
+          display:block;
+        }
+        
+        .nav_02 {
+           min-width:230px;
+        } 
+
+        .nav_03 {
+          width:446px; 
+          height:47px;
+          cursor:pointer;
+        }  
+                
+        .nav_04 {
+          min-width:395px; 
+          height:47px;
+        }
+        
+        .nav_05 {
+           width:100%;
+        }  
+          
+        .nav_06 {
+          min-width:261px; 
+        }
+         
+
+        .td_005 {
+            padding-left:80px;margin:0;
+        }
+        
+                
+        .heading_fix {
+            padding-left:8px;
+        }
+                
+        .heading_fix2 {
+            padding-right:12px;
+        }
+        
+        .table_002 {
+        padding:0;margin:0;  
+        background:        url('../images/bg/bg_02_m_l2.jpg') !important;
+        width:100%;
+        height: 300px;      
+        } 
+        
+        .td_icon2 {
+          height:88px !important;
+          width:20%;
+          padding-bottom: 4px;
+        }
+        
+        .td_icon3 {
+          height:74px !important;
+          padding-bottom: 8px;
+        }
+          
+        .td_icon4 {
+          height:90px !important;
+
+          width: 20%;          
+        }
+        
+        .logo_landing {
+         width:120px;
+        }
+        
+        div#container {
+          min-width: 480px;
+          height: 320px;
+        }
+        
+        .new_ref_bg {
+            background:url('../images/bg/bg_01.jpg') !important;
+        }
+        
+        .new_ref_bg2 {
+            background:url('../images/bg/bg_03_m_l.jpg') !important;
+        }
+        
+        div#container2, div#wn2 { width: 104px; height: 200px; }
+     
+     .super_fix {
+        height: 100px;
+     }
+
+                        
+     .heading_back_2 {
+            display: block;
+            min-width:     27px;
+            height:    44px;
+        }   
+        
+        
+    .td_icon2 {
+          height:90px;
+    }
+      
+    .td_icon3 {
+          height:86px;
+  }
+          
+  .td_icon4 {
+          height:122px;
+  }   

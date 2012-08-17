@@ -1,0 +1,15 @@
+AuthType Basic
+AuthName "Lee's Secret Area"
+AuthUserFile /server/www/allaboutapps.at/.htpasswd
+Require valid-user
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^.*/admin.*$ [NC]
+RewriteRule ^admin.*$ index.php?module=admin [QSA,NC]
+
+RewriteCond %{REQUEST_URI} ^.*admin/blog/new/.*$ [NC]
+RewriteRule ^admin/blog/new/(.*)$ index.php\?module=admin&do=newblog [QSA,NC]
+
+#RewriteCond %{REQUEST_URI} ^admin/blog/edit.*$ [NC]
+#RewriteRule ^admin/blog/edit/(.*)$ index.php\?module=admin&do=editblog&nid=$1 [QSA,NC]

@@ -1,0 +1,133 @@
+/* NOTE: container div also specifies width and height (in head of demo) */
+div#wn1 { 
+    position:absolute; /* scroll area div must be positioned */
+    width:598px; height:100%; /* width and height required. adjust to suit */
+    overflow:hidden; /* required! */
+    border:0px solid #000;
+	}
+div#scrollbar1 {
+    position:absolute;
+    /* include following if you don't want scrollbar hidden when insufficient content for scrolling */
+    /* visibility:visible !important; */ 
+    width:11px; height:425px;
+    right:0; /* at right edge in container div */
+    font-size:1px; /* for ie cooperation */
+    }
+div#scrollbar1 .up {
+    //background-image:url('../images/tri-up.gif');
+    background-repeat: no-repeat;
+    width:1px; height:11px; /* specify width and height of your image */
+    position:absolute; top:0;
+    }
+div#scrollbar1 .down {
+    //background-image:url('../images/tri-dn.gif');
+    background-repeat: no-repeat;
+    width:1px; height:11px; /* specify width and height of your image */
+    position:absolute; bottom:0;
+    }
+div#scrollbar1 .track {
+    position:absolute; /* track must be positioned */
+    left:0;
+    top:4px; /* equal to height of .up image plus optional 1px for gap */
+    width:0px; 
+    height:414px; /* height of scrollbar minus 2 X image height minus optional 2px for gap */
+    background-color:#dadcd7;
+    }
+div#scrollbar1 .dragBar {
+    position:absolute; /* dragBar must be positioned */
+    //background-color:#dadcd7; /* can use background-image if you like */
+    width:6px; 
+    height:20px; /* code auto-sizes */
+    /* height:20px !important;  use !important to prevent code from sizing dragBar according to amount of content */
+    top:1px; left:1px; /* optional, small gap between track and dragBar */
+    
+      background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;  
+  border-radius         : 3px;
+  
+    }
+
+/* for clutzy draggers */
+div#scrollbar1 {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    }
+    
+/* safari, chrome, opera have very prominent outline by default 
+   opera shows outline movement with scrolling and won't allow none
+   set to suit your page design
+*/
+div#wn1:focus, div#scrollbar1:focus, div#scrollbar1 .track:focus, div#scrollbar1 .dragBar:focus {
+    outline:1px dotted #eee;
+    }
+    
+
+
+/* NOTE: container div also specifies width and height (in head of demo) */
+div#wn2 { 
+    position:absolute; /* scroll area div must be positioned */
+    width:198px; height:420px; /* width and height required. adjust to suit */
+    overflow:hidden; /* required! */
+    border:0px solid #000;
+	}
+div#scrollbar2 {
+    position:absolute;
+    /* include following if you don't want scrollbar hidden when insufficient content for scrolling */
+    /* visibility:visible !important; */ 
+    width:10px; height:98%;
+    right:0; /* at right edge in container div */
+    font-size:1px; /* for ie cooperation */
+    }
+div#scrollbar2 .up {
+    //background-image:url('../images/tri-up.gif');
+    background-repeat: no-repeat;
+    width:1px; height:11px; /* specify width and height of your image */
+    position:absolute; top:0;
+    }
+div#scrollbar2 .down {
+    //background-image:url('../images/tri-dn.gif');
+    background-repeat: no-repeat;
+    width:1px; height:11px; /* specify width and height of your image */
+    position:absolute; bottom:0;
+    }
+div#scrollbar2 .track {
+    position:absolute; /* track must be positioned */
+    left:0;
+    top:0px; /* equal to height of .up image plus optional 1px for gap */
+    width:0px; 
+    height:100%; /* height of scrollbar minus 2 X image height minus optional 2px for gap */
+    background-color:#dadcd7;
+    }
+div#scrollbar2 .dragBar {
+    position:absolute; /* dragBar must be positioned */
+    //background-color:#dadcd7; /* can use background-image if you like */
+    width:8px; 
+    height:98%; /* code auto-sizes */
+    /* height:20px !important;  use !important to prevent code from sizing dragBar according to amount of content */
+    top:1px; left:1px; /* optional, small gap between track and dragBar */
+    
+      background: rgba(0,0,0,.5);
+  position              : relative;
+  margin                : 0 1px 0 1px;
+  -moz-border-radius    : 3px;
+  -webkit-border-radius : 3px;  
+  border-radius         : 3px;
+  
+    }
+
+/* for clutzy draggers */
+div#scrollbar2 {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    }
+    
+/* safari, chrome, opera have very prominent outline by default 
+   opera shows outline movement with scrolling and won't allow none
+   set to suit your page design
+*/
+div#wn2:focus, div#scrollbar2:focus, div#scrollbar2 .track:focus, div#scrollbar2 .dragBar:focus {
+    outline:1px dotted #eee;
+    }

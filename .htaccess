@@ -1,0 +1,40 @@
+RewriteEngine On
+
+
+
+#HTML
+RewriteRule ^html/([a-z0-9_.]+)(\/)?$ $0 [QSA,NC]
+
+# Home
+RewriteRule ^index(\.html|/)?$ index.php [QSA,NC]
+RewriteRule ^blog/attachment/([a-z0-9_.]+)(\/)?$ index.php?fid=$1 [QSA,NC]
+RewriteRule ^blog/([a-z0-9_.]+)(\/)?$ index.php?module=blog&bid=$1 [QSA,NC]
+RewriteRule ^blog/([a-z0-9_.]+)(\.html|/)?$ index.php?module=blog&bid=$1 [QSA,NC]
+
+
+# Site
+RewriteRule ^([a-z0-9_]+)(\/)?$ index.php?module=$1 [QSA,NC]
+RewriteRule ^([a-z0-9_]+)(\.html|/)?$ index.php?module=$1 [QSA,NC]
+
+# Products
+RewriteRule ^products/([a-z0-9_]+)(\/)?$ index.php?module=products&pid=$1 [QSA,NC]
+RewriteRule ^products/([a-z0-9_]+)(\.html|/)?$ index.php?module=products&pid=$1 [QSA,NC]
+
+# Services
+RewriteRule ^services/([a-z0-9_]+)(\/)?$ index.php?module=services&sid=$1 [QSA,NC]
+RewriteRule ^services/([a-z0-9_]+)(\.html|/)?$ index.php?module=services&sid=$1 [QSA,NC]
+
+# References
+RewriteRule ^references/([a-z0-9_]+)(\/)?$ index.php?module=references&cat=$1 [QSA,NC]
+RewriteRule ^references/([a-z0-9_]+)(\.html|/)?$ index.php?module=references&cat=$1 [QSA,NC]
+
+# ADMIN
+RewriteRule ^admin(\/)?$ index.php?module=admin [QSA,NC]
+RewriteRule ^admin/blog/new/(\/)?$ index.php?module=admin&do=newblog [QSA,NC]
+RewriteRule ^admin/blog/edit/([a-z0-9_]+)(\/)?$ index.php?module=admin&do=editblog&nid=$1 [QSA,NC]
+RewriteRule ^admin/changecms/([a-z0-9_]+)(\/)?$ index.php?module=admin&do=changecms&cat=$1 [QSA,NC]
+RewriteRule ^admin/([a-z0-9_]+)(\/)?$ index.php?module=admin&do=$1 [QSA,NC]
+
+# CMS
+RewriteRule ^([a-z0-9_]+)/([a-z0-9_]+)(\/)?$ index.php?module=$1&cat=$2 [QSA,NC]
+RewriteRule ^([a-z0-9_]+)/([a-z0-9_]+)(\.html|/)?$ index.php?module=$1&cat=$2 [QSA,NC]
