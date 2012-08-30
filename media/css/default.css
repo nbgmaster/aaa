@@ -1063,4 +1063,10 @@ font-weight: bold;
            border:1px solid #000;
 
        }
+       
+       .fix_spacing2 {
+       		padding-bottom: 28px;
+       }
+       	
+       }
 

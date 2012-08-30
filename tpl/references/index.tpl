@@ -8,7 +8,7 @@
 		{if $total_n > 0}
 	
             	
-              <table width="100%" height="172" class="ref_01" cellspacing="0" cellpadding="0">
+              <table width="100%" height="{if $browser == 'Firefox'}138{else}172{/if}" class="ref_01" cellspacing="0" cellpadding="0">
           <tr>
            {counter start=0 assign="count"} 
           	{foreach from=$array item=ref name=ref}
@@ -33,7 +33,7 @@
  {if $entries_left > 0}
 
  </tr></table>
-               <table width="100%" height="172" class="ref_02" cellspacing="0" cellpadding="0"><tr>
+               <table width="100%" height="{if $browser == 'Firefox'}138{else}172{/if}" class="ref_02" cellspacing="0" cellpadding="0"><tr>
                {/if}
                
       {/if}

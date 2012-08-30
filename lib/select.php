@@ -68,7 +68,7 @@
                  if ( !$this->table ) $this->table = 'users';
 
                  $query = mysql_query("SELECT COUNT(1) AS result from $this->table $this->condition LIMIT 1");
- // echo "SELECT COUNT(1) AS result from $this->table $this->condition LIMIT 1";
+ //echo "SELECT COUNT(1) AS result from $this->table $this->condition LIMIT 1<br>";
                  $rows  = mysql_fetch_row( $query );
 
                  $result = $rows[ 0 ];
@@ -141,7 +141,7 @@
               if ( $totalrows > 0 )  {
                        
                    $count = 0;
-            //echo "SELECT $this->cols FROM $this->table $this->condition $this->group $this->order $this->limit";      
+            //echo "SELECT $this->cols FROM $this->table $this->condition $this->group $this->order $this->limit<br>";      
                    $select = mysql_query("SELECT $this->cols FROM $this->table $this->condition $this->group $this->order $this->limit");
                    mysql_query("SET NAMES 'utf-8'");
                    while ( $result = mysql_fetch_assoc($select) )  {
