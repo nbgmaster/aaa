@@ -1,27 +1,5 @@
 <?php
 
-           /* Print :: SELECT *
-
-         $blog            = new SelectEntrys();
-         $blog->cols      = "id, category, ";
-         $blog->table     = $tbl_products;
-         if ($Myadmin == 1) $blog->condition = " deleted = '0' ";
-         else $blog->condition = " deleted = '0' AND visibility = '1' AND UNIX_TIMESTAMP(date) < $timestamp ";
-         $blog->order     = 'date DESC';
-
-         //$blog->limit     = "$begin, " . $set[0]['perpage_blog'];
-         $blog->module    = 'news';
-         $blog->template  = 'news/list.tpl';
-         
-         if ($_GET['bid']) $blog->toogle = $_GET['bid'];
-         
-         $blog->replace   = 'true';
-
-         $blog->row();
- 
-      ******************************************/
-      
-      
          $products            = new SelectEntrys();
          $products->cols      = "id_handler, name_DE, name_EN";
          $products->table     = $tbl_products;

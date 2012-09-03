@@ -23,7 +23,7 @@
 
          if ($ay_products[0]['ID'] > 0) {
          			
-    			   $path = "media/images/products/screenshots/".$ay_products[0]['id_handler']."/";
+    		 $path = "media/images/products/screenshots/".$ay_products[0]['id_handler']."/";
     			  
              $tpl->assign("total_screens", countfiles($path));		
              
@@ -32,7 +32,7 @@
          
          }
          
-         else   $tpl->display("block_deactivated.tpl");
+         else $tpl->display("block_deactivated.tpl");
          
  
       /******************************************/
@@ -46,27 +46,6 @@
  
        
        }
-       
-       else {
-    
-    //          if ($TotalRows > 0) {
-              
-                    /* Load :: blog Content */
-    
-              //         include('show.php');
-          
-                    /******************************************/
-                    
-          //      }
-                
-                // error page
-       
-             //   else {
-             //     $tpl->display("linespacer.tpl");
-             //     $tpl->display("block_deactivated.tpl");
-            //    }
-                
-      }
 
   }
 

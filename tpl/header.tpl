@@ -4,7 +4,7 @@
 
 <title>{$title_hp}</title>
 
-        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="author" content="allaboutapps" />
         <meta name="copyright" content="(C) 2012 allaboutapps" />
         <meta name="publisher" content="Stefan Richter" />
@@ -181,25 +181,25 @@
  
     <div class="frameborder" style="background:url('{$root_dir}media/images/gfx/frame_01.png');width:789px;height:78px;float:left;position:relative">&nbsp; </div>
 
- <div class="frameborder" style="clear:both"></div>
+    <div class="frameborder" style="clear:both"></div>
  
 		<div class="frameborder" style="background:url('{$root_dir}media/images/gfx/frame_02_new.png');width:79px;height:469px;float:left;position:relative;" usemap="#Image-Maps_3206" border="0">
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
-<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p></p>
-<a href="#" onclick="parent.location='{$root_dir}'" style="font-size:46px;letter-spacing:2px">&nbsp;&nbsp;</a>
-</div>
+		<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+		<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+		<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p></p>
+		<a href="#" onclick="parent.location='{$root_dir}'" style="font-size:46px;letter-spacing:2px">&nbsp;&nbsp;</a>
+		</div>
 
-<div class="frame_xy">
-     
-    {include file="titlebar.tpl"}
-     
-    {if $module != ''}    
-    
-    <div id="container" class="new_ref_bg"  > <!-- optional container div for scroll area and scrollbar -->
-  
-        <div id="wn1" style="width:100%;"> <!-- scroll area div -->
-            <div id="lyr1" style="width:100%;" > <!-- layer in scroll area (content div) -->
-
-    {/if}      
-                 
+		<div class="frame_xy">
+		     
+		    {include file="titlebar.tpl"}
+		     
+		    {if $module != ''}    
+		    
+		    <div id="container" class="new_ref_bg"  > <!-- optional container div for scroll area and scrollbar -->
+		  
+		        <div id="wn1" style="width:100%;"> <!-- scroll area div -->
+		            <div id="lyr1" style="width:100%;" > <!-- layer in scroll area (content div) -->
+		
+		    {/if}      
+		                 

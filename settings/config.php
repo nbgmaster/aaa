@@ -4,7 +4,7 @@
 
      session_start();
      ob_start();
-     header('Content-Type: text/html; charset=iso-8859-1');
+     header('Content-Type: text/html; charset=utf-8');
 
   /******************************************/
 
@@ -15,11 +15,10 @@
  else error_reporting(E_ERROR | E_WARNING | E_PARSE);
  
 
-
   /* Load :: XAJAX AND Smarty */
 
     // require_once("./smarty/Smarty.class.php");
-     require_once("./smarty2/libs/SmartyBC.class.php");
+     require_once("./smarty/libs/SmartyBC.class.php");
 
      require_once("./xajax/xajax_core/xajax.inc.php");     
 
@@ -129,11 +128,11 @@
      unset($settings);
 
      $set[0]["keywords"] = html_entity_decode($set[0]["keywords"]);
-     
+
      require_once('./lib/replace.php');
 
-     define("ROOT_DIR", "http://www2.allaboutapps.at/");
- 
+     define("ROOT_DIR", "http://localhost/aaa/");
+  
      //define("ROOT_DIR", $set[0]["root_dir"]);
      // don't forget to also change it in "index.common.php" !!!
                     
@@ -146,10 +145,11 @@
   /******************************************/
 
 
-  /* Load :: Template settings */
+  /* Load :: Functions */
 
      require_once('lib/functions.php');
-
+    // require_once('index.server.php');
+     
   /******************************************/
 
 
@@ -164,27 +164,6 @@
 
   /******************************************/
   
-  
-  /* Load :: Visiter Stats   
-
-     update_visiter_stats($tbl_visiter, $tbl_settings, $timestamp, $set[0]["del_old_visiters"], $set[0]["time_new_visiter"]);  
-     
-     $date_today = mktime(0,0,1,$Fmonth,$Fday,$Fyear);
-     $date_yesterday = mktime(0,0,1,$Fmonth_y,$Fday_y,$Fyear_y);
-               
-     $visiter = new CheckExist();          
-     $visiter->tableE     = $tbl_visiter;
-     $visiter->conditionE = " UNIX_TIMESTAMP(date) >= $date_today ";
-
-     $visiters_today = $visiter->exist();
-     
-     $visiter->conditionE = " UNIX_TIMESTAMP(date) >= $date_yesterday AND UNIX_TIMESTAMP(date) < $date_today ";
-     $visiters_yesterday = $visiter->exist();
-               
-     unset($visiter);
-
-  ******************************************/
-    
 
   /* Load :: Template settings */
 
@@ -208,18 +187,7 @@
 
   /******************************************/
 
-
-   /* Load :: Initial Module 
-
-       if ( !$module )  {
-
-           $module = 'blog';
-
-     }
-
-  /******************************************/
-
-
+  
   /* Administrator Login Status */
 
      if ( $_COOKIE["userdata"] )  {

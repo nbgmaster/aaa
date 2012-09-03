@@ -289,4 +289,6 @@
       * NewStrings */
       
         $tpl->assign("home_more1", "More own products");   
-        $tpl->assign("home_more2", "More marketing products");          
+        $tpl->assign("home_more2", "More marketing products");   
+		
+		       

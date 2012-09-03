@@ -12,37 +12,6 @@
 
        /******************************************/
 
-
-       /* Delete possible attachments too */
-       /*** FUNCTION DEACTIVATED
-
-          $attach = new SelectEntrys();
-
-          $attach->table     = $tbl_blog;
-          $attach->condition = " id = '$_POST[nid]' ";
-          $attach->order     = '';
-          $attach->limit     = "1";
-          $attach->module    = '';
-          $attach->template  = '';
-
-          $attach->cols = 'file1';
-          $file1 = $attach->row();  
-
-          $attach->cols = 'file2';
-          $file2 = $attach->row();   
-
-          $attach->cols = 'file3';
-          $file3 = $attach->row(); 
-
-          if ( $file1 ) unlink("attachments/$file1"); 
-          if ( $file2 ) unlink("attachments/$file2"); 
-          if ( $file3 ) unlink("attachments/$file3"); 
-
-          unset($attach);
-
-       /******************************************/
-
-
        /* Delete entry */
        
           $blog            = new ModifyEntry();

@@ -1,32 +1,5 @@
 <?php
-
-/*
-	bg[1] = "e6e8eb";
-	bg[1] = "e5e7eb";
-	bg[1] = "e4e6ea";
-  bg[1] = "e2e4e8";
-  bg[1] = "e1e2e8";
-  bg[1] = "dee0e5";
- 
- 	bg[1] = "dcdee3";
-	bg[1] = "dadce1";
-  bg[1] = "d8dbe0";
-  bg[1] = "d5d8dd";
-  bg[1] = "d2d6db"; 
-        	
- 	bg[1] = "d0d3d9";
-	bg[1] = "cdd0d7";
-  bg[1] = "cbced5";
-  bg[1] = "c9cdd3";
-  bg[1] = "c7cad2"; 
-    
- 	bg[1] = "c5c9d0";
-	bg[1] = "c4c7cf";
-  bg[1] = "c2c6ce";
-  bg[1] = "c1c5cd";
-  bg[1] = "c7cad2"; 
-  */
-                 
+           
    if ( $block["team"]["status"] == 1 )  {
    
          /* Print :: SELECT  */

@@ -1,15 +1,26 @@
 <?php
 
+ require_once("xajax/xajax_core/xajax.inc.php");
 
-  require_once("xajax/xajax_core/xajax.inc.php");
-
-  require_once("./smarty/libs/SmartyBC.class.php");
+     require_once("smarty/libs/SmartyBC.class.php");
  
-  $xajax = new xajax("index.server.php");
+  session_start();
+
+  $tpl = new Smarty;
+
+  require_once("dbCon.php");
+
+  define("ROOT_DIR", "http://www2.allaboutapps.at/");
+  
+  //define("ROOT_DIR", "http://richter-stefan.info/aaa/");
+  
+  $xajax = new xajax(ROOT_DIR."index.server.php");
   $xajax->register(XAJAX_FUNCTION, "page");
   $xajax->register(XAJAX_FUNCTION, "delete");
   $xajax->register(XAJAX_FUNCTION, "edit_comment");
   $xajax->register(XAJAX_FUNCTION, "show_details");
+  
+
      
   /******************************************/
 
@@ -35,10 +46,12 @@
      
      $ay_select = $select->row();
             
-		$filename = "media/images/team/".$mid.".png";
-		
-		if (file_exists($filename)) $ay_select[0]['img_exist'] = 1;
-		else $ay_select[0]['img_exist'] = 0;
+   //  $ay_select[0]['description_DE'] = replaceBBcode($ay_select[0]['description_DE'], $set[0]["width_images"], 1);
+
+$filename = "media/images/team/".$mid.".png";
+
+if (file_exists($filename)) $ay_select[0]['img_exist'] = 1;
+else $ay_select[0]['img_exist'] = 0;
 
          	     
      $tpl->assign('array_details', $ay_select);

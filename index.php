@@ -1,9 +1,5 @@
 <?php
 
-  //$country = file_get_contents('http://api.hostip.info/country.php?ip='.$_SERVER['REMOTE_ADDR']);
- 
-  //if ($country != 'US') {   
-
       /* Load :: Configuration settings */
     
          include('settings/config.php');
@@ -44,8 +40,7 @@
          //$xajax->configure('debug', true);    
 
          $xajax->configure('javascript URI', ROOT_DIR.'xajax/'); 
-    
-         // $tpl->assign("xajax_javascript",$xajax->getJavascript(ROOT_DIR.'xajax/'));
+
          $xajax->printJavascript();
          
       /******************************************/
@@ -73,5 +68,3 @@
          $tpl->display("footer.tpl");
     
       /******************************************/
-
-  //}

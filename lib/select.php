@@ -144,6 +144,7 @@
             //echo "SELECT $this->cols FROM $this->table $this->condition $this->group $this->order $this->limit<br>";      
                    $select = mysql_query("SELECT $this->cols FROM $this->table $this->condition $this->group $this->order $this->limit");
                    mysql_query("SET NAMES 'utf-8'");
+				   mysql_set_charset('utf8');
                    while ( $result = mysql_fetch_assoc($select) )  {
 
                            if ( $this->module && $this->template )  {

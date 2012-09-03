@@ -8,13 +8,13 @@
       		<td class="heading_back_ini" height="44" align="center"> 
 
 
-          <span onclick="parent.location='{$root_dir}{if $module=='blog' AND $bid != ""}blog/{elseif $module=='services' AND $sid != ''}{/if}'" class="header_nav_button">
+          <a href="#"  onclick="parent.location='{$root_dir}{if $module=='blog' AND $bid != ""}blog/{elseif $module=='services' AND $sid != ''}{/if}'" class="header_nav_button">
               
               {if $module=='blog' AND $bid != ''}
               <span class="heading_fix">{$titlebar_overview}</span>
               {else}<span class="heading_fix2">{$titlebar_home}</span>{/if}
           
-          </span>
+          </a>
           
           </td>
           <td style="background:url('{$root_dir}media/images/gfx/headerbg_01c.png') repeat-x" align="center" class="heading_back_2">&nbsp;
@@ -60,9 +60,9 @@
      <table width="100%" height="44" border="0" cellpadding="0" cellspacing="0" class="table_ref_t">
 	<tr>
 		<td style="background:url('{$dir_img}gfx/bookshelf_top_01.png')" width="125" height="44" align="center">
-    <span onclick="parent.location='{$root_dir}'" class="header_nav_button">
+    <a href="#" onclick="parent.location='{$root_dir}'" class="header_nav_button">
     <span>{$titlebar_home}</span>
-    </span>
+    </a>
     </td>
 		<td class="ref_navi_02" height="44">&nbsp;</td>
 		<td style="background:url('{$dir_img}gfx/bookshelf_top_b_03{if $cat == 'iPhone' OR $cat == ""}_h{/if}.png')" width="78" height="44" align="center"><a href="#" onclick="parent.location='{$root_dir}references/iPhone/'"><span style="color:#fff;font-size:14px;">iPhone</span></a></td>
@@ -80,9 +80,9 @@
      <table class="table_ref_navi" height="44" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td style="background:url('{$dir_img}gfx/bookshelf_top_b_01_m.png') no-repeat;width:100px" height="44" align="center">
-    <span onclick="parent.location='{$root_dir}'" class="header_nav_button">
+    <a href="#" onclick="parent.location='{$root_dir}'" class="header_nav_button">
     <span>{$titlebar_home}</span>
-    </span>
+    </a>
     </td>
 		<td class="ref_navi_02" height="44">&nbsp;</td>
 		<td style="background:url('{$dir_img}gfx/bookshelf_top_b_06_m.png') no-repeat;width:175px" height="44" align="center">

@@ -131,15 +131,7 @@ clear: both;
        
         }
 
-        .header_nav_button  {
-        
-           color:        #fff;
-           font-weight:  400;
-           font-size:    13px;
-           cursor: pointer;
-       
-        }
-        
+
         .frame_01 {
         
         width:   75px;
@@ -1062,11 +1054,5 @@ font-weight: bold;
        
            border:1px solid #000;
 
-       }
-       
-       .fix_spacing2 {
-       		padding-bottom: 28px;
-       }
-       	
        }
 

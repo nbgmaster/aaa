@@ -3,9 +3,7 @@
    if ( $block["press"]["status"] == 1 )  {
    
          $press            = new SelectEntrys();
-
-                  $press->cols      = "ID, link, source, title, subtitle, text, date";
-                  
+         $press->cols      = "ID, link, source, title, subtitle, text, date";                  
          $press->table     = $tbl_press;
          $press->order     = "date DESC";
          $press->multiSelect = '1';                 

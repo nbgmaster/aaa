@@ -25,8 +25,7 @@
                  $tpl->display("references/index.tpl");   
              
              }
- 
-    
+     
   }
 
   else  {

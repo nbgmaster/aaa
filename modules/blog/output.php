@@ -225,15 +225,23 @@
            
              include('modules/admin/selectboxes_date.php');
          
-        }  
-           
+        } 
+		
+		$preview_DE = preg_replace('/\s+?(\S+)?$/', '', substr($result["preview_DE"], 0, 200)); 
+		$preview_EN = preg_replace('/\s+?(\S+)?$/', '', substr($result["preview_EN"], 0, 200)); 
+		
+		//$preview_DE = substr($result["preview_DE"],0,200);
+		//$preview_EN = substr($result["preview_EN"],0,200);
+		//$title = utf8_decode($title);
+		//$title_EN = utf8_decode($title_EN);
+				
         $array[] = array('thisid'           => $id,
                                'author'     => $author,
                                'title'      => $title,
-                               'preview_DE' => $result["preview_DE"],
+                               'preview_DE' => $preview_DE,
                                'message'    => $message,
                                'title_EN'   => $title_EN,
-                               'preview_EN' => $result["preview_EN"],
+                               'preview_EN' => $preview_EN,
                                'message_EN' => $message_EN,
                                'time'       => $b_timestamp,
                                'date_formatted' => $result["date_formatted"],

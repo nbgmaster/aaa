@@ -8,32 +8,7 @@
  
  <table cellspacing="0" cellpadding="0" class="table_003" border="0" align="center">
  <tr><td>
- 
- 
- <!--tr>                 
-    <td class="td_icon" align="center" valign="top">
-    <span onclick="parent.location='{$root_dir}products/app_app/'" class="home_buttons">
-    <img src="{$dir_img}icon.png" class="icon_size" border="0"><p></p>
-    AppApp</span>
-    </td> 
-    <td class="td_icon" align="center" valign="top">
-    <span onclick="parent.location='{$root_dir}products/car2go/'" class="home_buttons">
-    <img src="{$dir_img}icon.png" class="icon_size" border="0"><p></p>                                                          
-    car2Go</span>
-    </td>
-    <td class="td_icon" align="center" valign="top">
-    <span onclick="parent.location='{$root_dir}products/quizzes/'" class="home_buttons">
-    <img src="{$dir_img}icon.png" class="icon_size" border="0"><p></p>
-    Quiz Apps</span>
-    </td>
-    <td class="td_icon" align="center" valign="top">
-    <img src="{$dir_img}icon.png" class="icon_size"  border="0">
-    <p></p>
-    <span class="home_buttons">{$home_more1}</span>
-    </td>
-                
-  </tr-->
-  
+
   <table style="width:100%;height:56%" border="0" cellspacing="0" cellpadding="0">
   
  <tr>

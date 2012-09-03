@@ -4,10 +4,10 @@
 
         $deactivated_notice_00 = "Seiteninformation";
         $deactivated_notice_01 = "Diese Seite ist momentan nicht anzeigbar.";
-        $deactivated_notice_02 = "Dies kann folgende Gründe haben:";
+        $deactivated_notice_02 = "Dies kann folgende Grï¿½nde haben:";
         $deactivated_notice_03 = "Die Seite befindet sich noch im Aufbau.";
-        $deactivated_notice_04 = "Die Seite wird gerade überarbeitet.";
-        $deactivated_notice_05 = "Die Seite existiert nicht (mehr). (ungültiger Link)";
+        $deactivated_notice_04 = "Die Seite wird gerade ï¿½berarbeitet.";
+        $deactivated_notice_05 = "Die Seite existiert nicht (mehr). (ungï¿½ltiger Link)";
 
 
      /* Get Date & time values */
@@ -50,13 +50,13 @@
 
         $navi_names["admin"]     = "Administration";
         $navi_names["home"]      = "Home";
-        $navi_names["about"]     = "Über mich";
+        $navi_names["about"]     = "ï¿½ber mich";
         $navi_names["imprint"]   = "Impressum";
 
         $navi_names2["newblog"]      = "Neuen Blogeintrag schreiben";
         $navi_names2["editblog"]     = "Blog";
 
-        $navi_names2["about_edit"]     = "Über mich bearbeiten";
+        $navi_names2["about_edit"]     = "ï¿½ber mich bearbeiten";
         $navi_names2["imprint_edit"]   = "Impressum bearbeiten";
         $navi_names2["settings"]       = "Einstellungen bearbeiten";
         
@@ -159,7 +159,7 @@
         $tpl->assign('f_options_o2_yes', 'Ja'); 
         $tpl->assign('f_options_o2_no', 'Nein'); 
         $tpl->assign('f_options_o3', 'Startdatum:'); 
-        $tpl->assign('bid_invisible', 'Dieser Blogeintrag ist für Besucher derzeit nicht sichtbar');
+        $tpl->assign('bid_invisible', 'Dieser Blogeintrag ist fï¿½r Besucher derzeit nicht sichtbar');
          
      /******************************************/
      
@@ -215,7 +215,7 @@
      
      /* Title boxes :: BBCode */
 
-        $mainform_info = "Markiere den gewuuml;nschten Text und w&auml;hle anschließend die gewuuml;nschte Formatierung aus.";
+        $mainform_info = "Markiere den gewuuml;nschten Text und w&auml;hle anschlieï¿½end die gewuuml;nschte Formatierung aus.";
 
         $tpl->assign('mainform_info', $mainform_info);
 
@@ -224,16 +224,16 @@
         $tpl->assign('title_underline', 'unterstrichener Text');
         $tpl->assign('title_center', 'zentrierter Text');
         $tpl->assign('title_block', 'Text in Blockschrift');
-        $tpl->assign('title_url', 'Hyperlink einfügen');
-        $tpl->assign('title_image', 'Bild einfügen');
-        $tpl->assign('title_quote', 'Zitat einfügen');
-        $tpl->assign('title_list', 'Liste einfügen');
+        $tpl->assign('title_url', 'Hyperlink einfï¿½gen');
+        $tpl->assign('title_image', 'Bild einfï¿½gen');
+        $tpl->assign('title_quote', 'Zitat einfï¿½gen');
+        $tpl->assign('title_list', 'Liste einfï¿½gen');
         $tpl->assign('title_expand', 'Erweiterte BBCodes anzeigen');
         
-        $tpl->assign('bbcode_size', 'Textgr&ouml;ße');
+        $tpl->assign('bbcode_size', 'Textgr&ouml;ï¿½e');
         $tpl->assign('bbcode_size_small', 'klein');
         $tpl->assign('bbcode_size_middle', 'mittel');
-        $tpl->assign('bbcode_size_big', 'groß');
+        $tpl->assign('bbcode_size_big', 'groï¿½');
         $tpl->assign('bbcode_size_huge', 'riesig');
         $tpl->assign('bbcode_color', 'Textfarbe');
 
@@ -258,7 +258,7 @@
      /* Attachment */
 
         $tpl->assign('attach_file', 'Optional: Dateien anh&auml;ngen');
-        $tpl->assign('attach_maxsize', 'max. Dateigr&ouml;ße:');
+        $tpl->assign('attach_maxsize', 'max. Dateigr&ouml;ï¿½e:');
         $tpl->assign('attach_del', 'Optional: Angeh&auml;ngte Dateien entfernen (Checkbox aktivieren)');
         $tpl->assign('attach_format', 'Erlaubte Dateiformate');
         $tpl->assign('attach_data', 'Es befinden sich Dateien im Anhang');
@@ -289,4 +289,6 @@
       * NewStrings */
       
         $tpl->assign("home_more1", "Mehr eigene Produkte"); 
-        $tpl->assign("home_more2", "Mehr Marketing Produkte");                                                    
+        $tpl->assign("home_more2", "Mehr Marketing Produkte");    
+		
+		                                                

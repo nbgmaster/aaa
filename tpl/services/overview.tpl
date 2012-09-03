@@ -11,19 +11,6 @@
 <div align="center"> 
 
 
-<!--div style="text-align:center; width:500px; margin-left:auto; margin-right:auto;" class="services">
-
-<img id="Image-Maps_3201205030639456" src="{$dir_img}wheel_{$sid}.png" usemap="#Image-Maps_3201205030639456" border="0" width="500" height="356" alt="" />
-<map id="_Image-Maps_3201205030639456" name="Image-Maps_3201205030639456">
-<area shape="rect" coords="163,0,336,85" onclick="parent.location='{$root_dir}services/consulting/'" alt="" title="" onmouseover="return overlib('{$array_short.consulting}');" onmouseout="return nd();" />
-<area shape="rect" coords="2,114,175,199" onclick="parent.location='{$root_dir}services/monitoring/'" alt="" title=""  onmouseover="return overlib('{$array_short.monitoring}');" onmouseout="return nd();"    />
-<area shape="rect" coords="321,115,494,200" onclick="parent.location='{$root_dir}services/development/'" alt="" title=""  onmouseover="return overlib('{$array_short.development}');" onmouseout="return nd();"    />
-<area shape="rect" coords="55,247,228,332" onclick="parent.location='{$root_dir}services/marketing/'" alt="" title=""  onmouseover="return overlib('{$array_short.marketing}');" onmouseout="return nd();"    />
-<area shape="rect" coords="268,247,441,332" onclick="parent.location='{$root_dir}services/publishing/'" alt="" title=""  onmouseover="return overlib('{$array_short.publishing}');" onmouseout="return nd();"    />
-</map>
-
-</div-->
-       
 <div style="text-align:center; width:300px; margin-left:auto; margin-right:auto;" class="services">
 <img id="Image-Maps_3201205141634139" src="{$dir_img}wheel_m_{$sid}.png" usemap="#Image-Maps_3201205141634139" border="0" width="300" height="214" alt="" />
 <map id="_Image-Maps_3201205141634139" name="Image-Maps_3201205141634139">

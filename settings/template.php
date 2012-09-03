@@ -4,10 +4,13 @@
   
         $tpl = new Smarty;
         $tpl->debugging = false;
-    //    $tpl->caching = false;
+        //$tpl->caching = false;
         //$tpl->cache_lifetime = 120;
         $tpl->setTemplateDir('./tpl');
-
+		$tpl->setCompileDir('./smarty/libs/templates_c');
+		$tpl->setCacheDir('./smarty/libs/cache');
+		//$tpl->debugging = true;
+		
      /* Miscellaneous */
 
         $tpl->assign('root_dir', ROOT_DIR);  
@@ -43,7 +46,6 @@
         
      /******************************************/
      
-
 
       /* IE style fixing */
 
@@ -152,9 +154,7 @@
 
         
         $navi_ref["news"]      = ROOT_DIR."blog/";
-                
-                
-        
+
         $navi_ref["admin"]      = ROOT_DIR."admin/";
         $navi_ref["home"]       = ROOT_DIR;
         $navi_ref["about"]      = ROOT_DIR."cms/about/";

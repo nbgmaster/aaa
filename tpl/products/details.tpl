@@ -38,9 +38,6 @@
     
     <td class="td_003">
     
-    <!--span class="blog_title" align="left"><nobr>{if $lang == "german"}{$products.name_DE}{else}{$products.name_EN}{/if}</nobr></span>
-    <p>&nbsp;</p-->
-       
     <span class="blog_content">{if $lang == "german"}{eval var=$products.description_DE}{else}{eval var=$products.description_EN}{/if}</span>
     <p>&nbsp;</p>
     
