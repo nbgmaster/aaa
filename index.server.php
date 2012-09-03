@@ -279,7 +279,7 @@
            $objResponse->assign($p_name,"innerHTML",$html2);
            
            if ($TotalRows > $set[0]['perpage_comments']) $objResponse->assign($p_name2,"innerHTML",$html);
-           if ($TotalRows > $set[0]['perpage_comments']) $objResponse->assign($p_name3,"innerTML",$html);
+           if ($TotalRows > $set[0]['perpage_comments']) $objResponse->assign($p_name3,"innerHTML",$html);
          
          
            //p_cpages_4
