@@ -15,7 +15,9 @@
         <meta name="description" content="{$main_title}" />
         <meta name="keywords" content="{$keywords}" />
         <meta name="apple-mobile-web-app-capable" content="yes" />    
+        {*remove this for full web view*}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
         <meta http-equiv="imagetoolbar" content="no">
        
         <noscript><meta http-equiv="refresh" content="0;URL=html/noscript.htm"></noscript>
@@ -54,7 +56,7 @@
 
         {if $module == 'team'}        
         <script src="{$root_dir}js/dw_scroll_c.js" type="text/javascript"></script>
-        
+               
         <script type="text/javascript">
         
             function init_dw_Scroll() {ldelim}
@@ -173,8 +175,9 @@
 
 <body ontouchmove="BlockMove(event);">
 
-    <center>    
-
+  <div id="test"></div>
+    <center> 
+    
     <a name="top"></a>
    
     <div id="blubb">
@@ -190,7 +193,7 @@
 		<a href="#" onclick="parent.location='{$root_dir}'" style="font-size:46px;letter-spacing:2px">&nbsp;&nbsp;</a>
 		</div>
 
-		<div class="frame_xy">
+		<div class="frame_xy" id="frame_xy">
 		     
 		    {include file="titlebar.tpl"}
 		     
@@ -201,5 +204,6 @@
 		        <div id="wn1" style="width:100%;"> <!-- scroll area div -->
 		            <div id="lyr1" style="width:100%;" > <!-- layer in scroll area (content div) -->
 		
-		    {/if}      
+		    {/if}   
+     
 		                 

@@ -2,7 +2,7 @@
            
     {if $module != '' AND $module != 'references'}
      
-        <table class="nav_01" height="44" border="0" cellpadding="0" cellspacing="0">
+        <table class="nav_01" id="nav_01" height="44" border="0" cellpadding="0" cellspacing="0">
       	<tr>                                      
 
       		<td class="heading_back_ini" height="44" align="center"> 
@@ -77,7 +77,7 @@
      
   <div class="ref_navi_mobile">
          
-     <table class="table_ref_navi" height="44" border="0" cellpadding="0" cellspacing="0">
+     <table class="table_ref_navi" id="table_ref_navi" height="44" border="0" cellpadding="0" cellspacing="0">
 	<tr>
 		<td style="background:url('{$dir_img}gfx/bookshelf_top_b_01_m.png') no-repeat;width:100px" height="44" align="center">
     <a href="#" onclick="parent.location='{$root_dir}'" class="header_nav_button">

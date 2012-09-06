@@ -7,8 +7,8 @@
         //$tpl->caching = false;
         //$tpl->cache_lifetime = 120;
         $tpl->setTemplateDir('./tpl');
-		$tpl->setCompileDir('./smarty/libs/templates_c');
-		$tpl->setCacheDir('./smarty/libs/cache');
+	//	$tpl->setCompileDir('./smarty/libs/templates_c');
+	//	$tpl->setCacheDir('./smarty/libs/cache');
 		//$tpl->debugging = true;
 		
      /* Miscellaneous */
@@ -16,7 +16,9 @@
         $tpl->assign('root_dir', ROOT_DIR);  
              
         $tpl->assign("debug_mode", "debug_mode");
-             
+
+        $tpl->assign("agent", $_SERVER['HTTP_USER_AGENT']);
+		             
         $tpl->assign('IE', $_GET["IE"]); 
         $tpl->assign("contact_mail", $set[0]["contact_mail"]);
         $tpl->assign('perpage_comments', $set[0]["perpage_comments"]);
@@ -271,7 +273,7 @@
         if(check_mobile()) $tpl->assign("style_0", "handheld");
         else $tpl->assign("style_0", "screen");
      
-     
+    //$tpl->assign("style_0", "screen");
   /* Initialize :: Language Data */
                
         $tpl->assign('deactivated_notice_00', $deactivated_notice_00);

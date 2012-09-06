@@ -33,6 +33,74 @@
 </div></div>
 </center>
 
+
+        {if $style_0 == "handheld"}
+                	      
+        <script type="text/javascript">
+
+		  function getWidth()
+		  {
+		    xWidth = null;
+		    if(window.screen != null)
+		      xWidth = window.screen.availWidth;
+		
+		    if(window.innerWidth != null)
+		      xWidth = window.innerWidth;
+		
+		    if(document.body != null)
+		      xWidth = document.body.clientWidth;
+		      
+		      widthx = xWidth+"px";
+		      
+		      //alert(widthx);
+       		   {*if $module == ''}  document.getElementById('table_003').style.cssText = 'width:'+widthx+' !important';{/if*}
+                            
+  		      
+		      document.getElementById('blubb').style.width=widthx;
+		       {if $module != ''}  document.getElementById('container').style.width=widthx; {/if}
+		       {if $module == ''}  document.getElementById('frame_xy').style.width=widthx; {/if}
+		       {if $module != '' && $module != 'references'}  document.getElementById('nav_01').style.width=widthx; {/if}
+		       {if $module != '' && $module == 'references'}  document.getElementById('table_ref_navi').style.width=widthx; {/if}
+		       {if $module != '' && $module == 'references'}  document.getElementById('ref_01').style.width=widthx; {/if}
+       		   {if $module != '' && $module == 'references'}  document.getElementById('ref_02').style.width=widthx; {/if}
+
+  		       		   {if $module == ''} document.getElementById('table_003').style.width=widthx; {/if}
+       		       		      
+	 //  document.getElementById('test').innerHTML="Kjlkj"+widthx;
+    	      		
+		  //  return xWidth;
+		  }
+		function getHeight() {
+		  xHeight = null;
+		  if(window.screen != null)
+		    xHeight = window.screen.availHeight;
+		
+		  if(window.innerHeight != null)
+		    xHeight =   window.innerHeight;
+		
+		  if(document.body != null)
+		    xHeight = document.body.clientHeight;
+		    
+		      heightx = xHeight+"px";
+		      		
+		 // return xHeight;
+		 //	   document.getElementById('test').innerHTML="Kjlkj"+heightx;
+    	
+		   
+		       {if $module != ''}  document.getElementById('container').style.height=heightx; {/if}
+		       {if $module == ''}  document.getElementById('frame_xy').style.height=heightx; {/if}
+		       {if $module == ''}  document.getElementById('table_002').style.height=heightx; {/if}
+   
+   			   document.getElementById('blubb').style.height=heightx;	       		 
+		}
+		
+		getWidth();
+		getHeight();
+		
+		</script>
+		{/if}
+
+
 {literal}
 <script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

@@ -67,7 +67,7 @@
 		{if $total_n > 0}
 	         
             	
-              <table width="100%" height="172" class="ref_01" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m.png') no-repeat">
+              <table width="100%" height="172" class="ref_01" id="ref_01" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m.png') no-repeat">
           <tr>
            {counter start=0 assign="count"} 
           	{foreach from=$array item=ref name=ref}
@@ -91,7 +91,7 @@
  {math assign="entries_left" equation="a - b" a=$total_n b=$count}
  {if $entries_left > 0}
  </tr></table>
-               <table width="100%" height="172" class="ref_02" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m.png') no-repeat"><tr>
+               <table width="100%" height="172" class="ref_02" id="ref_02" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m.png') no-repeat"><tr>
                {/if}
                
       {/if}
@@ -121,7 +121,7 @@
 	
             	
          	
-              <table width="100%" height="172" class="ref_01" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m_l.png') no-repeat">
+              <table width="100%" height="172" class="ref_01" id="ref_02" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m_l.png') no-repeat">
           <tr>
            {counter start=0 assign="count"} 
           	{foreach from=$array item=ref name=ref}
@@ -145,7 +145,7 @@
  {math assign="entries_left" equation="a - b" a=$total_n b=$count}
  {if $entries_left > 0}
  </tr></table>
-               <table width="100%" height="172" class="ref_02" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m_l.png') no-repeat"><tr>
+               <table width="100%" height="172" class="ref_02" id="ref_02" cellspacing="0" cellpadding="0" style="background:url('{$dir_img}bg/bar_m_l.png') no-repeat"><tr>
                {/if}
                
       {/if}
