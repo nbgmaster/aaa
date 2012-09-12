@@ -19,7 +19,7 @@
 				<td style="{*background:url('{$dir_img}gfx/label_03.png') no-repeat;*}width:14px;" height="47"></td>
 				<td style="{*background:url('{$dir_img}gfx/label_04.png') no-repeat;*}width:25px" height="47"></td>
 			</tr>
-		  <tr><td colspan="3" style="padding-left:8px;cursor:default;line-height:24px">{if $lang == 'german'}{$blog.preview_DE}{else}{$blog.preview_EN}{/if}... <a href="#" onclick="parent.location='{$root_dir}blog/{$blog.thisid}/'" style="font-size:14px;text-decoration:underline">{if $lang=="german"}weiterlesen{else}read more{/if}</a>
+		  <tr><td colspan="3" style="padding-left:8px;cursor:default;line-height:24px;text-align:left">{if $lang == 'german'}{$blog.preview_DE}{else}{$blog.preview_EN}{/if}... <a href="#" onclick="parent.location='{$root_dir}blog/{$blog.thisid}/'" style="font-size:14px;text-decoration:underline">{if $lang=="german"}weiterlesen{else}read more{/if}</a>
 		</td></tr>
 		</table>  
 		

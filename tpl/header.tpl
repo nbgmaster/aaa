@@ -37,6 +37,7 @@
         <link rel="stylesheet" href="{$root_dir}media/css/scrollbar.css" type="text/css" />    
         <link rel="stylesheet" href="{$root_dir}media/css/default.css" type="text/css" />   
         <link rel="stylesheet" href="{$root_dir}media/css/slider.css" type="text/css" />  
+        {if $browser == 'IE'}<link rel="stylesheet" href="{$root_dir}media/css/IE.css" type="text/css" />  {/if}
         
         {if $style_0 == "handheld"}
         <link rel="stylesheet" href="{$root_dir}media/css/mobile_portrait.css" type="text/css" media="screen and (max-width: 800px)" />

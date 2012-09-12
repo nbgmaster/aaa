@@ -10,16 +10,16 @@
      
  <table border="0" cellpadding="0" cellspacing="0"><tr>
  
-			<td class="team_name_size" height="23">
+			<td class="team_name_size" height="23" style="text-align:left">
  
-      <span style="margin-left:8px;font-size:16px;color:#e98314; ">Operations</span></td>
+      <span style="margin-left:8px;font-size:16px;color:#e98314;">Operations</span></td>
 
 	</tr>
   
 	 {foreach from=$array_list key=mid item=listitem name=listitem}
 
 	<tr>
-		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px" class="team_name_size" height="24">
+		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px;text-align:left" class="team_name_size" height="24">
     <a onclick="xajax_show_details('team', {$listitem.id})" title="" style="cursor:pointer">
     {$listitem.firstname} {$listitem.lastname}
      </a>
@@ -28,13 +28,13 @@
 	{/foreach}
   
   			<tr>
-		<td style="padding-left:8px;padding-top:16px" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Marketing</span></td>
+		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Marketing</span></td>
 				</tr>	
         
    	{foreach from=$array_list3 key=mid item=listitem name=listitem}
 
 	<tr>
-		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px" class="team_name_size" height="24">
+		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px;text-align:left" class="team_name_size" height="24">
     <a onclick="xajax_show_details('team', {$listitem.id})" title="" style="cursor:pointer">
     {$listitem.firstname} {$listitem.lastname}
      </a>
@@ -44,13 +44,13 @@
   
 
 					<tr>
-		<td style="padding-left:8px;padding-top:16px" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Development</span></td>
+		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Development</span></td>
 				</tr>	
 		
 	{foreach from=$array_list2 key=mid item=listitem name=listitem}
 
 	<tr>
-		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px" class="team_name_size" height="24">
+		<td style="border-bottom:0px solid #fff;padding-left:8px;padding-right:26px;text-align:left" class="team_name_size" height="24">
     <a onclick="xajax_show_details('team', {$listitem.id})" title="" style="cursor:pointer">
     {$listitem.firstname} {$listitem.lastname}
      </a>
@@ -71,6 +71,6 @@
 
  
     </td>
-		<td class="nav_08" valign="top" style="padding-right:28px">
+		<td class="nav_08" valign="top" style="padding-right:28px;text-align:left">
     
         <p id="team_profile" class="p_001">

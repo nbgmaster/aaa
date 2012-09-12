@@ -18,7 +18,7 @@
   /* Load :: XAJAX AND Smarty */
 
     // require_once("./smarty/Smarty.class.php");
-     require_once("./smarty/libs/SmartyBC.class.php");
+     require_once("./smarty2/libs/SmartyBC.class.php");
 
      require_once("./xajax/xajax_core/xajax.inc.php");     
 
@@ -131,7 +131,7 @@
 
      require_once('./lib/replace.php');
 
-     define("ROOT_DIR", "http://localhost/aaa/");
+     define("ROOT_DIR", "http://www.allaboutapps.at/");
   
      //define("ROOT_DIR", $set[0]["root_dir"]);
      // don't forget to also change it in "index.common.php" !!!

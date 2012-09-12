@@ -21,9 +21,9 @@
 	
 	<p class="blog_list" style="padding-left:0"><b>Follow us on</b></p>
 	<p>&nbsp;</p>
-	<a href="https://www.facebook.com/pages/aaa-all-about-apps/232734300177152" target="_blank"><img src="{$dir_img}facebook.png" width="24"></a>
+	<a href="https://www.facebook.com/pages/aaa-all-about-apps/232734300177152" target="_blank"><img src="{$dir_img}facebook.png" width="24" border="0"></a>
 	&nbsp;
-	<a href="https://twitter.com/#!/@itsallaboutapps" target="_blank"><img src="{$dir_img}twitter.png" width="24"></a>
+	<a href="https://twitter.com/#!/@itsallaboutapps" target="_blank"><img src="{$dir_img}twitter.png" width="24" border="0"></a>
 	  
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
@@ -33,11 +33,8 @@
 	<p>&nbsp;</p>
 	Bernhard Lehner
 	<p>&nbsp;</p>
-	<ul class="bb-list-unordered">
-	<li class="bb-listitem">b.lehner@i5invest.com</li>
+	<a href="mailto:b.lehner@i5invest.com">b.lehner (at) i5invest.com</a>
 	<!--li class="bb-listitem"><a href="https://www.facebook.com/SocialBarni" target="_blank"><img src="{$dir_img}facebook.png" width="24"></a>&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/#!/bernhardlehner" target="_blank"><img src="{$dir_img}twitter.png" width="24"></a></li-->
-	<li class="bb-listitem">+43 (0) <span style="font-size:1px"> &nbsp; </span>644 439 <span style="font-size:1px"> &nbsp; </span>86 <span style="font-size:1px"> &nbsp; </span>09</li>
-	</ul>
-	
+	+43 (0) <span style="font-size:1px"> &nbsp; </span>644 439 <span style="font-size:1px"> &nbsp; </span>86 <span style="font-size:1px"> &nbsp; </span>09
 	
 	</div>
