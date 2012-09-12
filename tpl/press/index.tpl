@@ -33,7 +33,7 @@
 	<p>&nbsp;</p>
 	Bernhard Lehner
 	<p>&nbsp;</p>
-	<a href="mailto:b.lehner@i5invest.com">b.lehner (at) i5invest.com</a>
+	<a href="mailto:b.lehner@i5invest.com"><u>b.lehner (at) i5invest.com</u></a>
 	<!--li class="bb-listitem"><a href="https://www.facebook.com/SocialBarni" target="_blank"><img src="{$dir_img}facebook.png" width="24"></a>&nbsp;&nbsp;&nbsp;<a href="http://twitter.com/#!/bernhardlehner" target="_blank"><img src="{$dir_img}twitter.png" width="24"></a></li-->
 	+43 (0) <span style="font-size:1px"> &nbsp; </span>644 439 <span style="font-size:1px"> &nbsp; </span>86 <span style="font-size:1px"> &nbsp; </span>09
 	
