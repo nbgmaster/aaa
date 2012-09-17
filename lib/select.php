@@ -170,8 +170,8 @@
                                            $colnames_formatted = str_replace("(id)","id",$colnames);
                                            $colnames_formatted = str_replace("(time)","time",$colnames);
                                            
-                                           $result[$colnames[$z]] = htmlentities($result[$colnames[$z]]);
-                                           $result[$colnames[$z]] = htmlspecialchars_decode($result[$colnames[$z]]);
+                                          // $result[$colnames[$z]] = htmlentities($result[$colnames[$z]]);
+                                         //  $result[$colnames[$z]] = htmlspecialchars_decode($result[$colnames[$z]]);
  
                                            $result[$colnames_formatted[$z]] =  $result[$colnames[$z]];
                                            
@@ -191,8 +191,8 @@
 
                                 else  {
                                 
-                                     $result[$this->cols] = htmlentities($result[$this->cols]);
-                                            $result[$this->cols] = htmlspecialchars_decode($result[$this->cols]);
+                                    // $result[$this->cols] = htmlentities($result[$this->cols]);
+                                          //  $result[$this->cols] = htmlspecialchars_decode($result[$this->cols]);
                                        
                                      return $result[$this->cols];
 

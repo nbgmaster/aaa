@@ -234,6 +234,8 @@
 		//$preview_EN = substr($result["preview_EN"],0,200);
 		//$title = utf8_decode($title);
 		//$title_EN = utf8_decode($title_EN);
+		
+		$preview_DE = htmlspecialchars_decode($preview_DE);
 				
         $array[] = array('thisid'           => $id,
                                'author'     => $author,

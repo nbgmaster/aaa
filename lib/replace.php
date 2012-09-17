@@ -9,8 +9,8 @@
 
       /* Extended stuff */
       
-       $message =   htmlentities($message);
-       $message =   htmlspecialchars_decode($message);
+       //$message =   htmlentities($message);
+       //$message =   htmlspecialchars_decode($message);
  
     
 

@@ -16,8 +16,11 @@
         <meta name="keywords" content="{$keywords}" />
         <meta name="apple-mobile-web-app-capable" content="yes" />    
         {*remove this for full web view*}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        {if $webview == 0}
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=10.0, user-scalable=yes" />
+        {else}
 
+        {/if}
         <meta http-equiv="imagetoolbar" content="no">
        
         <noscript><meta http-equiv="refresh" content="0;URL=html/noscript.htm"></noscript>
@@ -39,13 +42,15 @@
         <link rel="stylesheet" href="{$root_dir}media/css/slider.css" type="text/css" />  
         {if $browser == 'IE'}<link rel="stylesheet" href="{$root_dir}media/css/IE.css" type="text/css" />  {/if}
         
-        {if $style_0 == "handheld"}
+        {if $style_0 == "handheld" AND $webview == 0}
         <link rel="stylesheet" href="{$root_dir}media/css/mobile_portrait.css" type="text/css" media="screen and (max-width: 800px)" />
         <link rel="stylesheet" href="{$root_dir}media/css/mobile_landscape.css" type="text/css" media="screen and (max-width: 800px) and (orientation:landscape)" />
         {/if}
         
         <!--link rel="stylesheet" href="{$root_dir}media/css/galaxy.css" type="text/css" /-->   
+        {if $webview == 0}
         <link rel="stylesheet" href="{$root_dir}media/css/tablet.css" type="text/css" />  
+        {/if}
                      
         <script type="text/javascript" src="{$root_dir}js/jquery.js"></script>
         <script type="text/javascript" src="{$root_dir}js/slider.js"></script>     
@@ -176,7 +181,6 @@
 
 <body ontouchmove="BlockMove(event);">
 
-  <div id="test"></div>
     <center> 
     
     <a name="top"></a>

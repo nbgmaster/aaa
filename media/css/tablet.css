@@ -300,6 +300,22 @@ clear: left;
         } 
         
           .table_ref_t { position:absolute;top:0;left:0;width:768px;} 
+          
+        .td_icon2 {
+          width:20%;          
+          padding-bottom: 30px;
+        }
+        
+        .td_icon3 {
+          padding-bottom: 66px;
+        }
+          
+        .td_icon4 {
+          padding-bottom: 90px;
+          width: 20%;
+        }
+        
+        
                                  
         }
 

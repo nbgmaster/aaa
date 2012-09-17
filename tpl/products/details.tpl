@@ -36,7 +36,7 @@
     
     {/if}
     
-    <td class="td_003">
+    <td class="td_003" style="text-align: left">
     
     <span class="blog_content">{if $lang == "german"}{eval var=$products.description_DE}{else}{eval var=$products.description_EN}{/if}</span>
     <p>&nbsp;</p>

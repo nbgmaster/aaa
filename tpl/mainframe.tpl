@@ -1,7 +1,7 @@
 
   {if $module == ''}    
                     
- <table cellspacing="0" cellpadding="0" align="center" width="100%" style="height:200px">
+ <table cellspacing="0" cellpadding="0" align="center" width="100%">
  
  <tr><td valign="top" class="table_002" id="table_002">
  

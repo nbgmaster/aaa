@@ -12,7 +12,7 @@
  
 			<td class="team_name_size" height="23" style="text-align:left">
  
-      <span style="margin-left:8px;font-size:16px;color:#e98314;">Operations</span></td>
+      <span style="margin-left:8px;color:#e98314;">Operations</span></td>
 
 	</tr>
   
@@ -28,7 +28,7 @@
 	{/foreach}
   
   			<tr>
-		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Marketing</span></td>
+		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="color:#e98314;">Marketing</span></td>
 				</tr>	
         
    	{foreach from=$array_list3 key=mid item=listitem name=listitem}
@@ -44,7 +44,7 @@
   
 
 					<tr>
-		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="font-size:16px;color:#e98314;">Development</span></td>
+		<td style="padding-left:8px;padding-top:16px;text-align:left" class="team_name_size" height="23"><span style="color:#e98314;">Development</span></td>
 				</tr>	
 		
 	{foreach from=$array_list2 key=mid item=listitem name=listitem}

@@ -38,7 +38,7 @@
 			//	echo $ay_services[0]['short_DE'];
                               
                      if($lang_active == 'DE') $ay_services[0]['description_DE'] = replaceBBcode($ay_services[0]['description_DE'], $set[0]["width_images"], 1);
-                     else if($lang_active == 'EN') $ay_services[0]['description_EN'] = replaceBBcode($ay_services[0]['description_EN'], $set[0]["width_images"], 1);
+					 else if($lang_active == 'EN') $ay_services[0]['description_EN'] = replaceBBcode($ay_services[0]['description_EN'], $set[0]["width_images"], 1);
                      						               						
                      $tpl->assign("array", $ay_services);
             

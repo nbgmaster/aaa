@@ -28,7 +28,7 @@
           {elseif $module =='products'}{*$titlebar_products*} 
             {if $pid == 'app_check'}AppCheck{/if}
             {if $pid == 'app_optimization'}{if $lang == 'german'}App&nbsp;Store&nbsp;Optimierung{else}App&nbsp;Store&nbsp;Optimization{/if}{/if}
-            {if $pid == 'app_campaign'}{if $lang == 'german'}App Kampagne{else}Campaigning{/if}{/if}
+            {if $pid == 'app_campaign'}{if $lang == 'german'}AppKampagne{else}Campaigning{/if}{/if}
             {if $pid == 'app_banner'}AppBanner{/if}
           {elseif $module =='services'}{*$titlebar_services*}
           {if $sid == 'consulting'}Consulting{/if}

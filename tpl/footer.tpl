@@ -33,9 +33,13 @@
 </div></div>
 </center>
 
-
-        {if $style_0 == "handheld"}
-                	      
+        {*if $style_0 == "handheld" AND $webview == 1}
+<a href="{$root_dir}?webview=0">Mobile version</a> 
+{/if*}
+        {if $style_0 == "handheld" AND $webview == 0}
+        
+        <!--a href="{$root_dir}?webview=1">Webview</a-->  
+                      	      
         <script type="text/javascript">
 
 		  function getWidth()

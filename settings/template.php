@@ -18,7 +18,9 @@
         $tpl->assign("debug_mode", "debug_mode");
 
         $tpl->assign("agent", $_SERVER['HTTP_USER_AGENT']);
-		             
+		if (preg_match('/android/i',$_SERVER['HTTP_USER_AGENT']))  $tpl->assign("android", 1);
+		else  $tpl->assign("android", 0);
+		          
         $tpl->assign('IE', $_GET["IE"]); 
         $tpl->assign("contact_mail", $set[0]["contact_mail"]);
         $tpl->assign('perpage_comments', $set[0]["perpage_comments"]);
@@ -45,7 +47,8 @@
         $tpl->assign("visiters_total", $set[0]["visiters_total"]);
         $tpl->assign("visiters_today", $visiters_today);
         $tpl->assign("visiters_yesterday", $visiters_yesterday);
-        
+        $tpl->assign("webview", 0);
+            
      /******************************************/
      
 

@@ -1,9 +1,15 @@
 <?php
 
+  //$country = file_get_contents('http://api.hostip.info/country.php?ip='.$_SERVER['REMOTE_ADDR']);
+ 
+  //if ($country != 'US') {   
+
       /* Load :: Configuration settings */
     
          include('settings/config.php');
-    
+		 
+         if ($_SESSION['webview'] == 1)  $tpl->assign("webview", 1);
+            
       /******************************************/
     
     
@@ -40,13 +46,19 @@
          //$xajax->configure('debug', true);    
 
          $xajax->configure('javascript URI', ROOT_DIR.'xajax/'); 
-
+    
+         // $tpl->assign("xajax_javascript",$xajax->getJavascript(ROOT_DIR.'xajax/'));
          $xajax->printJavascript();
          
       /******************************************/
 
       /* Load :: Page Content */
-         
+      
+	 	 if (isset($_GET['webview'])) { 
+					$_SESSION['webview'] = $_GET['webview'];
+		  			header("Location:".ROOT_DIR);
+	     }
+	 	         
          if ($_GET['module'] == '') {
             include("modules/home/index.php");
          }
@@ -68,3 +80,5 @@
          $tpl->display("footer.tpl");
     
       /******************************************/
+
+  //}

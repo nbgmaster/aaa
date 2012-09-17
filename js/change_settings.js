@@ -49,8 +49,8 @@
 
   }
 
-  if (selected_lang == "2") document.getElementById("change_lang").selectedIndex = selected_lang - 2;
-  if (selected_lang == "3") document.getElementById("change_lang").selectedIndex = selected_lang - 2;
+ // if (selected_lang == "2") document.getElementById("change_lang").selectedIndex = selected_lang - 2;
+  //if (selected_lang == "3") document.getElementById("change_lang").selectedIndex = selected_lang - 2;
   
 
   

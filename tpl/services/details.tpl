@@ -3,7 +3,7 @@
 <div align="center">
 <table width="90%" border=0>
 <tr>
- <td>   
+ <td style="text-align:left">   
     {foreach from=$array item=services name=services}
     <!--span class="blog_title">{$services.name}</span>
     <p>&nbsp;</p-->    
